@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9E30DA752A5044430059DEF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30DA742A5044430059DEF7 /* AppDelegate.swift */; };
 		9E30DA772A5044430059DEF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30DA762A5044430059DEF7 /* SceneDelegate.swift */; };
-		9E30DA792A5044430059DEF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30DA782A5044430059DEF7 /* ViewController.swift */; };
 		9E30DA7C2A5044430059DEF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E30DA7A2A5044430059DEF7 /* Main.storyboard */; };
 		9E30DA7F2A5044430059DEF7 /* deathNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E30DA7D2A5044430059DEF7 /* deathNote.xcdatamodeld */; };
 		9E30DA812A5044470059DEF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E30DA802A5044470059DEF7 /* Assets.xcassets */; };
@@ -17,6 +16,7 @@
 		9E30DA8F2A5044470059DEF7 /* deathNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30DA8E2A5044470059DEF7 /* deathNoteTests.swift */; };
 		9E30DA992A5044470059DEF7 /* deathNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30DA982A5044470059DEF7 /* deathNoteUITests.swift */; };
 		9E30DA9B2A5044470059DEF7 /* deathNoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30DA9A2A5044470059DEF7 /* deathNoteUITestsLaunchTests.swift */; };
+		9E30DABA2A5972990059DEF7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30DAB92A5972990059DEF7 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		9E30DA712A5044430059DEF7 /* deathNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deathNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E30DA742A5044430059DEF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E30DA762A5044430059DEF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9E30DA782A5044430059DEF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E30DA7B2A5044430059DEF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E30DA7E2A5044430059DEF7 /* deathNote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = deathNote.xcdatamodel; sourceTree = "<group>"; };
 		9E30DA802A5044470059DEF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		9E30DA942A5044470059DEF7 /* deathNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = deathNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E30DA982A5044470059DEF7 /* deathNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deathNoteUITests.swift; sourceTree = "<group>"; };
 		9E30DA9A2A5044470059DEF7 /* deathNoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deathNoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9E30DAB92A5972990059DEF7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +101,12 @@
 		9E30DA732A5044430059DEF7 /* deathNote */ = {
 			isa = PBXGroup;
 			children = (
-				9E30DA742A5044430059DEF7 /* AppDelegate.swift */,
-				9E30DA762A5044430059DEF7 /* SceneDelegate.swift */,
-				9E30DA782A5044430059DEF7 /* ViewController.swift */,
-				9E30DA7A2A5044430059DEF7 /* Main.storyboard */,
-				9E30DA802A5044470059DEF7 /* Assets.xcassets */,
-				9E30DA822A5044470059DEF7 /* LaunchScreen.storyboard */,
-				9E30DA852A5044470059DEF7 /* Info.plist */,
-				9E30DA7D2A5044430059DEF7 /* deathNote.xcdatamodeld */,
+				9E30DAC42A5974100059DEF7 /* Extensions */,
+				9E30DAC22A5973BD0059DEF7 /* ViewControllers */,
+				9E30DAC12A5973B80059DEF7 /* Models */,
+				9E30DABE2A5973430059DEF7 /* Services */,
+				9E30DABC2A59732E0059DEF7 /* Views */,
+				9E30DABB2A5973230059DEF7 /* Supporting */,
 			);
 			path = deathNote;
 			sourceTree = "<group>";
@@ -128,6 +126,56 @@
 				9E30DA9A2A5044470059DEF7 /* deathNoteUITestsLaunchTests.swift */,
 			);
 			path = deathNoteUITests;
+			sourceTree = "<group>";
+		};
+		9E30DABB2A5973230059DEF7 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				9E30DA762A5044430059DEF7 /* SceneDelegate.swift */,
+				9E30DA852A5044470059DEF7 /* Info.plist */,
+				9E30DA802A5044470059DEF7 /* Assets.xcassets */,
+				9E30DA742A5044430059DEF7 /* AppDelegate.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		9E30DABC2A59732E0059DEF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E30DA7A2A5044430059DEF7 /* Main.storyboard */,
+				9E30DA822A5044470059DEF7 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9E30DABE2A5973430059DEF7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9E30DAC12A5973B80059DEF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9E30DA7D2A5044430059DEF7 /* deathNote.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9E30DAC22A5973BD0059DEF7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E30DAB92A5972990059DEF7 /* TableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9E30DAC42A5974100059DEF7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E30DA792A5044430059DEF7 /* ViewController.swift in Sources */,
+				9E30DABA2A5972990059DEF7 /* TableViewController.swift in Sources */,
 				9E30DA752A5044430059DEF7 /* AppDelegate.swift in Sources */,
 				9E30DA7F2A5044430059DEF7 /* deathNote.xcdatamodeld in Sources */,
 				9E30DA772A5044430059DEF7 /* SceneDelegate.swift in Sources */,
@@ -442,10 +490,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = deathNote/Info.plist;
+				INFOPLIST_FILE = deathNote/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -469,10 +516,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = deathNote/Info.plist;
+				INFOPLIST_FILE = deathNote/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
