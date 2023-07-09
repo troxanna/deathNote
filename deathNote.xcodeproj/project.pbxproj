@@ -17,6 +17,9 @@
 		9E30DA992A5044470059DEF7 /* deathNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30DA982A5044470059DEF7 /* deathNoteUITests.swift */; };
 		9E30DA9B2A5044470059DEF7 /* deathNoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30DA9A2A5044470059DEF7 /* deathNoteUITestsLaunchTests.swift */; };
 		9E30DABA2A5972990059DEF7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30DAB92A5972990059DEF7 /* TableViewController.swift */; };
+		9E30DAC62A597C520059DEF7 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30DAC52A597C520059DEF7 /* NoteViewController.swift */; };
+		9E30DAC82A597C6D0059DEF7 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30DAC72A597C6D0059DEF7 /* NoteView.swift */; };
+		E30F31423210F3096303E1B4 /* Pods_deathNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA841B80ABAD4EED3FC9384D /* Pods_deathNote.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		9E30DA982A5044470059DEF7 /* deathNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deathNoteUITests.swift; sourceTree = "<group>"; };
 		9E30DA9A2A5044470059DEF7 /* deathNoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deathNoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9E30DAB92A5972990059DEF7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		9E30DAC52A597C520059DEF7 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		9E30DAC72A597C6D0059DEF7 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		B0DDA93F46CCA78EB4245FF1 /* Pods-deathNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deathNote.debug.xcconfig"; path = "Target Support Files/Pods-deathNote/Pods-deathNote.debug.xcconfig"; sourceTree = "<group>"; };
+		D4CC44EDB63F4994DD1B5903 /* Pods-deathNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deathNote.release.xcconfig"; path = "Target Support Files/Pods-deathNote/Pods-deathNote.release.xcconfig"; sourceTree = "<group>"; };
+		FA841B80ABAD4EED3FC9384D /* Pods_deathNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deathNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E30F31423210F3096303E1B4 /* Pods_deathNote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CAC43EA911DDDFD42C39920 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0DDA93F46CCA78EB4245FF1 /* Pods-deathNote.debug.xcconfig */,
+				D4CC44EDB63F4994DD1B5903 /* Pods-deathNote.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		83E571862CCD0E855960B3C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA841B80ABAD4EED3FC9384D /* Pods_deathNote.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9E30DA682A5044430059DEF7 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +112,8 @@
 				9E30DA8D2A5044470059DEF7 /* deathNoteTests */,
 				9E30DA972A5044470059DEF7 /* deathNoteUITests */,
 				9E30DA722A5044430059DEF7 /* Products */,
+				2CAC43EA911DDDFD42C39920 /* Pods */,
+				83E571862CCD0E855960B3C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +173,7 @@
 			children = (
 				9E30DA7A2A5044430059DEF7 /* Main.storyboard */,
 				9E30DA822A5044470059DEF7 /* LaunchScreen.storyboard */,
+				9E30DAC72A597C6D0059DEF7 /* NoteView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				9E30DAB92A5972990059DEF7 /* TableViewController.swift */,
+				9E30DAC52A597C520059DEF7 /* NoteViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -185,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E30DA9E2A5044470059DEF7 /* Build configuration list for PBXNativeTarget "deathNote" */;
 			buildPhases = (
+				E9CE0750DFA9546C60C57661 /* [CP] Check Pods Manifest.lock */,
 				9E30DA6D2A5044430059DEF7 /* Sources */,
 				9E30DA6E2A5044430059DEF7 /* Frameworks */,
 				9E30DA6F2A5044430059DEF7 /* Resources */,
+				E2D93D50117FAF51D08DFE8F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,6 +337,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E2D93D50117FAF51D08DFE8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-deathNote/Pods-deathNote-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-deathNote/Pods-deathNote-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-deathNote/Pods-deathNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9CE0750DFA9546C60C57661 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-deathNote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9E30DA6D2A5044430059DEF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -311,7 +386,9 @@
 			files = (
 				9E30DABA2A5972990059DEF7 /* TableViewController.swift in Sources */,
 				9E30DA752A5044430059DEF7 /* AppDelegate.swift in Sources */,
+				9E30DAC82A597C6D0059DEF7 /* NoteView.swift in Sources */,
 				9E30DA7F2A5044430059DEF7 /* deathNote.xcdatamodeld in Sources */,
+				9E30DAC62A597C520059DEF7 /* NoteViewController.swift in Sources */,
 				9E30DA772A5044430059DEF7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +561,7 @@
 		};
 		9E30DA9F2A5044470059DEF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0DDA93F46CCA78EB4245FF1 /* Pods-deathNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -510,6 +588,7 @@
 		};
 		9E30DAA02A5044470059DEF7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4CC44EDB63F4994DD1B5903 /* Pods-deathNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
